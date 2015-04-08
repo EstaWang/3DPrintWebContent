@@ -1,0 +1,154 @@
+<!DOCTYPE>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>3D打印创作公共服务平台</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+<!------------------------------main --------------------------------->
+<div class="row-fluid" style='font-size:20px'>
+<div class="container" style='text-align:center'>
+		<div class="span3" align='center'>
+            <h3><a href=''>3D设计</a></h3>
+		</div>
+		<div class="span3" align='center'>
+            <h3>上传模型</h3>
+		</div>
+		<div class="span3" align='center'>
+            <h3><a href=''>选择材料</a></h3>
+		</div>
+		<div class="span3" align='center'>
+            <h3><a href=''>快速支付</a></h3>
+		</div>
+        </div>
+</div>
+<div class="container-fluid">
+<div class="container">
+	<div class="row-fluid">
+		<div class="span12">
+            <h3>上传模型文件</h3>
+			<div class="row-fluid" style='border:double;'>
+                <div class="span3">
+                    <h4 style="margin-top:50px;margin-left:20px;">请选择要上传的模型文件</h4>
+                    <input type='file' single style='margin-left:20px'>
+                </div>
+                <div class="span5">
+                    <h3>模型上传须知</h3>
+                    <h5>1.最大尺寸：64Mb或1000000个多边形</h5>
+                    <h5>2.需要的文件格式：stl</h5>
+                    <h5>3.贴图纹理格式：jpg,png</h5>
+                    <h5>4.权限设置：默为不可见，请至个人中心修改</h5>
+                </div>
+                <div class="span4">
+                    <h3>还有什么不了解的么？</h3>
+                    <h3><a href=''>3D打印学习教程</a></h3>
+                    <h3><a href=''>网站使用说明</a></h3> 
+                    <h3><a href=''>模型上传说明</a></h3>
+                </div>
+            </div>
+			<div class="row-fluid" style='border:double;font-size:14px;'>
+				<h3>
+					模型编辑
+				</h3>
+			</div>
+			<div class="row-fluid" style='border:double'>
+				<div class="span6">
+					<div class="row-fluid">
+						<div class="span12">
+							<h3>
+								1.模型名称
+                                <input type='text'>
+							</h3>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">
+                            <h3> 模型规格 </h3>
+							<div class="row-fluid">
+								<div class="span3">
+								</div>
+								<div class="span9">
+                                    <ul  style='margin-left:20%'>
+                                         长：<input type='text' style='width:60px;margin-top:20px;'/>
+                                    </ul>
+                                    <ul  style='margin-left:20%'>
+                                         宽：<input type='text' style='width:60px'/>
+                                    </ul>
+                                    <ul  style='margin-left:20%'>
+                                         高：<input type='text' style='width:60px'/>
+                                    </ul>
+                                    <ul style='font-size:16px;'>
+                                         <input type='radio' name='单位'/>毫米
+                                         <input type='radio' name='单位' checked/>厘米
+                                         <input type='radio' name='单位'/>英寸
+                                    </ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">
+							<h3>
+								3.模型预览图
+							</h3>
+							<div class="row-fluid">
+								<div class="span12">
+									<li>预览图<input type='file' /></li>
+                                    <li>正视图<input type='file' /></li>
+                                    <li>侧视图<input type='file' /></li>
+                                    <li>顶视图<input type='file' /></li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">
+							<h3>
+								4.添加模型描述和说明
+							</h3>
+                            <input type='text' style='width:300px;height:30px;' />
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">
+                            <h3>
+								5.添加类型
+							</h3>
+                            <li>
+                                <select name="模型标签" id="ID">
+						            <option value="1">时尚</option>
+						            <option value="2">简约</option>
+						            <option value="3">实用</option>
+						            <option value="4">精细</option>
+						            <option value="5">高强度</option>
+					            </select>
+                            </li>
+						</div>
+					</div>
+				</div>
+				<div class="span6">
+					<h3>
+						h3. 这是一套可视化布局系统.
+					</h3>
+					<div class="row-fluid">
+						<div class="span12">
+							<img alt="400x400" src="../img/31.png"/>
+                            <li>
+                            <img alt="140x140" src="../img/31.png" width="140"/>
+                            <img alt="140x140" src="../img/32.png" width="140"/>
+                            <img alt="140x140" src="../img/33.png" width="140"/>
+                            </li>
+						</div>
+					</div> 
+                    <button class="btn" type="button" style='margin-top:50px'>提交信息</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/panel.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="span2">
+    </div>
+    <div class="span12">
+        <div class="panel-heading">模块名称<input style="float: right;background: #000000" onclick="postMessage()"
+                                              class="btn btn-primary" value="发帖" type="button">
+        </div>
+            <table class="table" contenteditable="false">
+                <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>帖子名</td>
+                    <td>发帖人</td>
+                    <td>时间</td>
+                    <td>回复数</td>
+                </tr>
+                </thead>
+                <tbody><!--在此添加帖子信息-->
+                <tr class="one-row" onclick="loadMessage()">
+                    <td>1</td>
+                    <td>新人求入门</td>
+                    <td>王五</td>
+                    <td>2014-11-10</td>
+                    <td>5</td>
+                </tr>
+                </tbody>
+            </table><br><br>
+    </div>
+    <div class="span2">
+    </div>
+<script>
+    function loadMessage(){
+        window.location.href = "messageContent.html";
+    }
+    function postMessage(){
+        window.location.href = "messageNew.html";
+    }
+</script>
+</body>
+</html>

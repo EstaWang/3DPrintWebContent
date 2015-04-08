@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="row-fluid" style='font-size:20px' >
+<div class="container" >
+		<div class="span3" align='center'>
+            <h3><a href=''>3D设计</a></h3>
+		</div>
+		<div class="span3" align='center'>
+            <h3><a href=''>上传模型</a></h3>
+		</div>
+		<div class="span3" align='center'  style='background-color:#CFF'>
+            <h3>选择材料</h3>
+		</div>
+		<div class="span3" align='center'>
+            <h3><a href=''>快速支付</a></h3>
+		</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="container">
+	<div class="row-fluid" style='margin-top:50px;'>
+		<div class="span12" style='width:100%;height:200px;'>
+			<div class="tabbable" id="tabs-310125" style='border:double'>
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#panel-879247" data-toggle="tab">第一部分</a>
+					</li>
+					<li>
+						<a href="#panel-474499" data-toggle="tab">第二部分</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="panel-879247">
+						<div class="container-fluid">
+	                        <div class="row-fluid">
+	                     	<div class="span3">
+                                <h3>
+                                    价格
+                                </h3>
+                                <ul>
+                                    <button class='btn'>升序排列</button>
+                                </ul>
+	                     	</div>
+	                     	<div class="span3">
+                                <h3>
+                                    精度
+                                </h3>
+                                <ul>
+                                    <button class='btn'>升序排列</button>
+                                </ul>
+	                     	</div>
+	                     	<div class="span3">
+                                <h3>
+                                    强度
+                                </h3>
+                                <ul>
+                                    <button class='btn'>升序排列</button>
+                                </ul>
+	                     	</div>
+	                     	<div class="span3">
+                                <h3>
+                                    光滑度
+                                </h3>
+                                <ul>
+                                    <button class='btn'>升序排列</button>
+                                </ul>
+	                     	</div>
+	                     </div>
+                     </div>
+					</div>
+					<div class="tab-pane" id="panel-474499">
+						<div class="container-fluid" style='font-size:16px'>
+                     	<div class="row-fluid">
+                     		<div class="span3">
+                                <h3>形状规格</h3>
+                     		</div>
+                     		<div class="span3">
+                                长<input type='text' style='width:50px;'/>
+                     		</div>
+                     		<div class="span3">
+                                宽<input type='text' style='width:50px;'/>
+                     		</div>
+                     		<div class="span3">
+                                高<input type='text' style='width:50px;'/>
+                     		</div>
+                     	</div>
+                     	<div class="row-fluid">
+                     		<div class="span3">
+                                体积<input type='text' style='width:50px;'/>
+                     		</div>
+                     		<div class="span3">
+                                最薄处<input type='text' style='width:50px;'/>
+                     		</div>
+                     		<div class="span3">
+                                尺寸（毫米）<input type='radio' name='danwei' checked />
+                     		</div>
+                     		<div class="span3">
+                                尺寸（英寸）<input type='radio' name='danwei' checked />
+		                     </div>
+                     	</div>
+	                     <div class="row-fluid">
+	                     	<div class="span4">
+	                     	</div>
+	                     	<div class="span4">
+                                <button class='btn'>提交信息</button>
+                                <button class='btn'>重填</button>
+	                     	</div>
+	                     	<div class="span4">
+	                     	</div>
+	                     </div>
+                     </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<table align="left" width=100% height=100px border="10" bordercolor="#0CF" style="font-size:14px;">
+                <thead style="font-weight:bolder;font-family:'黑体'">
+                    <td width=3%>    </td>
+                    <td width=10%><h4>材料</h4></td>
+                    <td width=10%><h4>价格</h4></td>            
+                    <td width=10%><h4>精度</h4></td>
+                    <td width=10%><h4>强度</h4></td>
+                    <td width=10%><h4>光滑度</h4></td>
+                    <td width=40%><h4>材料描述</h4></td>
+                    <td width=10%></td>
+                </thead>
+                <tbody>
+                    <tr style='font-size:14px;'>
+                        <td width=3%>  1   </td>
+                        <td width=10%><p>pvc</p></td>
+                        <td width=10%><p>贵</p></td>            
+                        <td width=10%><p>高</p></td>
+                        <td width=10%><p>高</p></td>
+                        <td width=10%><p>高</p></td>
+                        <td width=40%><p>这是一种材料</p></td>
+                        <td><button class='btn'>选择材料</button></td>
+                    </tr>
+                </tbody>
+            </table>
+			<div class="pagination">
+				<ul>
+					<li>
+						<a href="#">上一页</a>
+					</li>
+					<li>
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">下一页</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../CSS/project.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/theme.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/superfish.css">
+    <script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../js/11-4.js"></script>
+    <style type="text/css">
+        .box{font-size:13px;margin:0 auto;text-align:center;height:200px;width:216px}
+        .imgbg{float:left;overflow:hidden;height:200px;width:150px;background:#fff url(../img/loading.gif) center center no-repeat}
+        .imgpl,.imgnl{height:200px;width:22px}
+        .imgpl{float:left;padding-right:11px}
+        .imgnl{float:right;padding-left:11px}
+        .imgpl:hover,.imgpl:visited:hover{background:url(../img/left.png) left 50% no-repeat;}
+        /*filter:alpha(opacity=60);-moz-opacity:0.6;-khtml-opacity:0.6;opacity:0.6}*/
+        .imgnl:hover,.imgnl:visited:hover{background: url(../img/right.png) right 50% no-repeat;}
+        /*filter:alpha(opacity=60);-moz-opacity:0.6;-khtml-opacity:0.6;opacity:0.6}*/
+        .tip{clear:both;height:23px;line-height:23px}
+
+        .zy_container{width:500px}
+        .zy_header {background-color:#99bbbb;}
+        .zy_menu {background-color:#ffff99;height:200px;width:150px;float:left;}
+        .zy_content {background-color:#111111;height:200px;width:350px;float:left;align:center}
+        .zy_footer {background-color:#99bbbb;clear:both;text-align:center;}
+        h1 {margin-bottom:0;}
+        h2 {margin-bottom:0;font-size:18px;}
+        ul {margin:0;}
+        li {list-style:none;}
+
+        .posLeft{
+            /*display:block;*/
+            top:250px;
+            left:250px;
+            /*position:fixed;*/
+            float: left;
+            border:1px solid #fff;
+            text-align:center;}
+      .posRight{
+          display:block;
+          top:250px;
+          right:250px;
+          /*position:;*/
+          float: right;
+          border:1px solid #fff;
+          text-align:center;}
+       .pos01{
+           display:block;
+           top:700px;
+           left:50%;
+           /*position:fixed;*/
+           border:1px solid #fff;
+           text-align:center;}
+    </style>
+</head>
+<body>
+    <div>
+      <!--  <p align="center">图片展示<br><br><br>
+            <div><a href="javascript:void(0)"><img src="../img/left.png" id="prePic"/></a>
+            </div>
+            <div>
+            <img id="picContent" src="../img/woman.jpg" height="100%" width="100%"/>
+            </div>
+            <div><a href="javascript:void(0)"><img src="../img/right.png" id="nextPic" /></a>
+            </div>
+        </p>
+        <p>wodesheji
+        </p>-->
+       <!-- <div class="imgpl">
+            <a href="javascript:void(0)"><img src="../img/left.png" id="prePic"/></a>
+        </div>-->
+        <table id="picShowTl" align="center">
+            <tr>
+                <td><a href="javascript:void(0)"><img src="../img/left.png" id="prePic"/></a>
+                </td>
+                <td>
+                    <img id="picContent" src="../img/woman.jpg" height="100%" width="100%"/>
+                </td>
+                <td><a href="javascript:void(0)"><img src="../img/right.png" id="nextPic" /></a>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center">
+                    <a href="javascript">创意设计</a>
+                    <a href="javascript">建立模型</a>
+                    <a href="javascript">上传到我们的网站</a>
+                    <a href="javascript">我们帮您来实现</a>
+                    <a href="javascript">模型展示出售</a>
+                    <a href="javascript">产品反馈</a>
+                </td><br><br>
+            </tr><br><br>
+            <tr></tr>
+        <!--<div  align="center">
+            <a href="javascript:void(0)"><img src="../img/left.png" id="prePic"/></a>
+            <img id="picContent" src="../img/woman.jpg" align="center"/>
+            <a href="javascript:void(0)"><img src="../img/right.png" id="nextPic" /></a>
+        </div>-->
+        </table>
+        <!--<div class="imgnl"><a href="javascript:void(0)"><img src="../img/right.png" id="nextPic" /></a></div>-->
+        <br><br><br><br>
+    </div>
+    <div>
+        <table id="buildPicTl" align="center">
+            <tr>
+                <td>1.技术简介</td>
+            </tr>
+            <tr>
+                <td>日常生活中使用的普通打印机可以打印电脑设计的平面物品，而所谓的3D打印机与普通打印机工作原理基本相同，<br>
+                    只是打印材料有些不同，普通打印机的打印材料是墨水和 纸张，而3D打印机内装有金属、陶瓷、塑料、砂等不同<br>
+                    的“打印材料”，是实实在在的原材料，打印机与电脑连接后，通过电脑控制可以把“打印材料”一层层叠加起<br>
+                    来，最终把计算机上的蓝图变成实物。通俗地说，3D打印机是可以“打印”出真实的3D物体的一种设备，比如打<br>
+                    印一个机器人、打印玩具车，打印各种模型，甚至是食物等等。之所以通俗地称其为“打印机”是参照了普通打<br>
+                    印机的技术原理，因为分层加工的过程与喷墨打印十分相似。这项打印技术称为3D立体打印技术。</td>
+            </tr>
+        </table><br><br><br><br>
+    </div>
+
+    <!--<div id="tdStudy">-->
+        <!--<div class="box">-->
+            <!--<div class="imgpl"></div>-->
+            <!--<div class="imgbg">-->
+                <!--<img id="imgShow" />-->
+            <!--</div>-->
+            <!--<div class="imgnl"></div>-->
+            <!--<p class="tip"></p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div id="tdStudy">-->
+        <!--<div >-->
+                <!--<img id="imgShow" src="../img/dragon.jpg"/>-->
+        <!--</div>-->
+    <!--</div>-->
+</body>
+
+<script type="text/javascript">
+    var arrImg = [
+            "../img/dragon.jpg",
+            "../img/engine.jpg",
+            "../img/head.jpg",
+            "../img/holes.jpg",
+            "../img/house.jpg",
+            "../img/printer1.jpg",
+            "../img/shoe.jpg",
+            "../img/woman.jpg"
+    ];
+    $(document).ready(function(){
+        $("#tdStudy").html("您好！欢迎来到3D打印世界！").show(1000);
+        var max = arrImg.length - 1;
+        var i = 0;
+        /*下一张图片*/
+        $("#nextPic").bind("click",function(){
+            i++;
+            if(i > max ){
+                i=0;
+            }
+//            $("#picContent").removeAttr("src");
+            $("#picContent").attr("src",arrImg[i]);
+        });
+        /*上一张图片*/
+        $("#prePic").bind("click",function(){
+            i--;
+            if(i < 0){
+                i = max;
+            }
+            $("#picContent").attr("src",arrImg[i]);
+        });
+//        var $imgShow = $("#imgShow");
+//        var i = 0;
+//        //图片的最大数量
+//        var max = arrImg.length - 1;
+//        /*下一张*/
+//        $(".imgnl").bind("click",function(){
+//            i++;
+//            if(i>max){
+//                i = 0;
+//            }
+//            loadPic(i);
+//            return false;
+//        });
+//        /*上一张*/
+//        $(".imgpl").bind("click",function(){
+//            i--;
+//            if(i < 0){
+//                i = max;
+//            }
+//            loadPic(i);
+//            return false;
+//        });
+//        //进入初始化页面
+//        loadPic(0);
+//        function loadPic(i){
+//            //应用图片预加载技术
+////            $imgShow.beforeload({"src":arrImg[i]});
+//            $imgShow.load(arrImg[i],{},function(){
+//                alert("hello");
+//            })
+//            $(".tip").html("第" + parseInt(i+1)+"张");
+//        }
+    });
+</script>
+</html>

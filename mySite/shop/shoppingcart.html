@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .bdiv{
+            border: 1px solid #99bbbb;
+            padding: 5px;
+        }
+        .cartStep .step {
+            color: #FFF;
+            background: #02cae2;
+        }
+        .cartStep .step,.cartStep .step1, .cartStep .step2, .cartStep .step3 {
+            width: 145px;
+            height: 30px;
+            float: left;
+            display: block;
+            font: 14px/30px '';
+            font-weight: bold;
+            color: #000;
+            background: #dee2e3;
+            text-align: center;
+            text-indent: 2em;
+        }
+        li {
+            list-style: none;
+        }
+        .cartStep {
+            float: right;
+            width: 440px;
+            padding-top: 20px;
+        }
+        body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, form {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        ul {
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+        .cartStep .step2,.cartStep .step3{
+            background: url(../img/shop/bg_cart_setup.gif) no-repeat left -30px #dee2e3;
+        }
+        .c
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="span12">
+        <ul class="cartStep">
+            <li class="step step1" style="color: #FFF; background: #02cae2;">1.我的购物车</li>
+            <li class="step2">2.选择打印材料</li>
+            <li class="step3">3.提交订单信息</li>
+        </ul>
+    </div>
+    <div class="span4">
+        <h3>我的购物车</h3>
+    </div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="row-fluid bdiv">
+                <div class="span1">
+                    <label>
+                        &nbsp;
+
+                        <input type="checkbox">
+                        &nbsp;&nbsp;&nbsp;全选</label>
+                </div>
+                <div class="span2">
+                    <button class="btn">删除选中</button>
+                </div>
+                <div class="span3">
+                    <p>&nbsp;&nbsp;&nbsp;模型信息</p>
+                </div>
+                <div class="span2">
+                    <p>加入时间</p>
+                </div>
+                <div class="span2">
+                    <p>数量</p>
+                </div>
+                <div class="span2">
+                    <p>操作</p>
+                </div>
+            </div>
+            <br>
+            <!-------购物单项 ------------>
+            <div class="row-fluid bdiv">
+                <div class="span1" style="padding-top: 45px;"><input type="checkbox"></div>
+                <div class="span2">
+                    <img alt="model" src="../img/models/chair1.gif" />
+                </div>
+                <div class="span3">
+                    <br>
+                    <span>家庭红椅子</span>
+                    <br>
+                    <span>模型基本描述信息</span>
+                </div>
+                <div class="span2 ">
+                    <br>
+
+                    <br>
+                    <span>2014.12.02</span>
+                </div>
+                <div class="span2 ">
+                    <br>
+                    <form>
+                        <input type="text" class="form-control"  value="1" style="width: 50px;">
+                    </form>
+                </div>
+                <div class="span2 ">
+                    <br>
+                    <button class="btn" type="button">移入收藏</button>
+                    <br><br>
+                    <button class="btn" type="button">取消购买</button>
+                </div>
+
+            </div>
+            <br><br>
+            <div class="row-fluid bdiv">
+
+                <div class="span1 " style="padding-top: 45px;"><input type="checkbox"></div>
+                <div class="span2 ">
+                    <img alt="model" src="../img/models/chair1.gif" />
+                </div>
+                <div class="span3 ">
+                    <br>
+                    <span>家庭红椅子</span>
+                    <br>
+                    <span>模型基本描述信息</span>
+                </div>
+                <div class="span2 ">
+
+                    <br>
+                    <span>2014.12.12</span>
+                </div>
+                <div class="span2 ">
+                    <br>
+                    <form>
+                        <input type="text" class="form-control" id="num" value="1" style="width: 50px;">
+                    </form>
+                </div>
+                <div class="span2 ">
+                    <br>
+                    <button class="btn" type="button">移入收藏</button>
+                    <br><br>
+                    <button class="btn" type="button">取消购买</button>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <br><br>
+                <div class="row-fluid">
+                    <div class="span4"></div>
+
+                    <div class="span2">
+                        <a href="../shop/shop.html">
+                            <button class="btn" type="button">返回商城</button>
+                        </a>
+                    </div>
+                    <div class="span2">
+                        <button class="btn" type="button">全部清空</button>
+                    </div>
+                    <div class="span2">
+                        <button class="btn" type="button">联系我们</button>
+                    </div>
+                    <!----------选择材料跳转至材料选择页面-------------->
+                    <div class="span2">
+                        <button class="btn" type="button">选择材料</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <br><br>
+                <div class="row-fluid">
+                    <label>提示：</label>
+                   <p>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;选定购物车中需要购买的模型，点击选择材料，选定打印所用的材料，方可提交订单，待卖家联系您，价格需在订单确认时商定。</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

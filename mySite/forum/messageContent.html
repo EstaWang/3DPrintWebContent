@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/panel.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="span2">
+    </div>
+    <div class="span12">
+        <div class="panel-heading"><h4></h4>
+        </div>
+        <table class="table" contenteditable="false" border="1px">
+            <tbody>
+            <tr>
+                <td width="100px">
+                    <p><b>发帖人：</b></p>
+                    <p><b>发帖时间：</b></p>
+                    <img src="../img/tmp.jpg" /></td>
+                <td style="position: relative"><br>
+                    <span style="margin-left: 80px">本网站使用3种3D打印机</span>
+                    <p align="right" style="position:absolute;bottom:5px;right: 10px">再此添加：支持一下（），反对（），回复（）</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100px">
+                    <p><b>楼层：</b></p>
+                    <p><b>回复人：</b></p>
+                    <p><b>回复时间：</b></p>
+                    <img src="../img/tmp.jpg" /></td>
+                <td><br>
+                    <span style="margin-left: 80px">本网站使用3种3D打印机</span></td>
+            </tr>
+            </tbody>
+        </table><br><br><br>
+
+        <div class="panel-heading"><h4>回复帖子</h4>
+        </div>
+        <table class="table" contenteditable="true" border="1px">
+            <tbody>
+            <tr>
+                <b>回帖人：</b><b style="margin-left: 150px">回帖时间：</b>
+            </tr>
+            <tr>
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="control-group"><!-- Select Basic --><br>
+                            <label class="control-label">内容: </label>
+
+                            <div class="controls">
+                                <textarea type="text" required rows="5" class="span8"> </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="control-group"><!-- Select Basic -->
+                            <label class="control-label">验证码: </label>
+
+                            <div class="controls">
+                                <input id='text' type='password' style="width:20%; height:25px; font-family:'微软雅黑';">
+                                <input id='rd' type='table' disabled style='width:18%;height:25px;backgroud-color:#FC9;margin-left:3.5%;'>
+                                <button class='btn'  onclick='update_rd()'>看不清</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                        <input class="btn btn-primary" value="回复他" type="submit">
+                    </div>
+                </div>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="span2">
+    </div>
+</body>
+</html>

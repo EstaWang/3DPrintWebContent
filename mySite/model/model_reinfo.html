@@ -1,0 +1,179 @@
+<!DOCTYPE>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container-fluid">
+<div class="container">
+    <h3>模型信息编辑</h3>
+	<div class="row-fluid" >
+        
+                        <div class="span6">
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <h4>
+                                        1.模型基本信息
+                                    </h4>
+                                    <p>stl文件名<input type='text' id="modelname" value='模型stl文件名'></p>
+                                    <p>模型名称<input type='text' id="modelname" value='模型名称'> </p>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <h4> 2.模型规格 </h4>   
+                                    <div class="row-fluid">
+                                        <div class="span3">
+                                        </div>
+                                        <div class="span9">
+                                            <ul  style='margin-left:20%'>
+                                                长：<input type='text' style='width:60px;margin-top:20px;' id="modellength" value='长宽高'/>
+                                            </ul>
+                                            <ul  style='margin-left:20%'>
+                                                宽：<input type='text' style='width:60px' id="modelwidth"/>
+                                            </ul>
+                                            <ul  style='margin-left:20%'>
+                                                高：<input type='text' style='width:60px' id="modelheight"/>
+                                            </ul>
+                                            <ul style='font-size:16px;'>
+                                                <input type='radio' name='单位' checked/>毫米
+                                                <input type='radio' name='单位' disabled/>厘米
+                                                <input type='radio' name='单位' disabled/>英寸
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <h4>
+                                        3.添加图片(最多六张)
+                                    </h4>
+                                    <div class="row-fluid">
+                                        <div class="span9" style='height:240px'>
+                                            <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td><button class='btn' id='b1' onClick='del(1)' style='display: block'>删除</button></td>
+                                                    <td><span id='f1'>这里放已经上传的模型图片</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><button class='btn' id='b2' onClick='del(2)' style='display: none'>删除</button></td>
+                                                    <td><span id='f2'></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><button class='btn' id='b3' onClick='del(3)' style='display: none'>删除</button></td>
+                                                    <td><span id='f3'></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><button class='btn' id='b4' onClick='del(4)' style='display: none'>删除</button></td>
+                                                    <td><span id='f4'></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><button class='btn' id='b5' onClick='del(5)' style='display: none'>删除</button></td>
+                                                    <td><span id='f5'></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><button class='btn' id='b6' onClick='del(6)' style='display: none'>删除</button></td>
+                                                    <td><span id='f6'></span></td>
+                                            </tbody>
+                                            </table>
+                                            <p>添加新图片（总数不能超过6张）</p>
+                                            <input type='file' multiple id='file' onChange="selectImage(this);" style="margin-bottom:10px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <h4>
+                                        4.添加模型描述和说明
+                                    </h4>
+                                    <input type='text' style='width:300px;height:30px;' />
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <h3>
+                                        5.添加类型
+                                    </h3>
+                                    <li style='list-style-type:none'>
+                                        <select name="模型标签" id="modelstyle">
+                                            <option value="时尚">时尚</option>
+                                            <option value="简约">简约</option>
+                                            <option value="实用">实用</option>
+                                            <option value="精细">精细</option>
+                                            <option value="高强度">高强度</option>
+                                        </select>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <h4>
+                                视图预览
+                            </h4>
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <li style='margin-top:50px;list-style-type:none'>
+                                        <img id='i1' src="" width="180">已经在后台的图片</img>
+                                        <img id='i2' src="" width="180" style='margin-left:40px'/>
+                                    </li>
+                                    <li style='margin-top:50px;list-style-type:none'>
+                                        <img id='i3' src="" width="180"/>
+                                        <img id='i4' src="" width="180" style='margin-left:40px'/>
+                                    </li>
+                                    <li style='margin-top:50px;list-style-type:none'>
+                                        <img id='i5' src="" width="180"/>
+                                        <img id='i6' src="" width="180" style='margin-left:40px'/>
+                                    </li>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <button class="btn btn-success btn-large" type="button" style='margin-top:20px;margin-left:420px' onclick="upload();">保存修改</button>
+</div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+	    var number=0;
+	    function putfilename(){
+		    var file=document.getElementById('file');
+		    number=file.files.length;
+		    if (number>6) alert('请最多上传6张图片')
+		    else
+		    for(i=1;i<=number;i++){
+			    var ele="f"+i.toString();
+			    var im="i"+i.toString();
+			    var bu="b"+i.toString();
+			    document.getElementById(bu).style.display="block";
+			    var element=document.getElementById(ele)
+			    element.innerHTML=file.files[i-1].name;
+			    var image=document.getElementById(im);
+			    var im_src=file.files[i-1].name;
+			}
+		}
+		function del(num){
+			var file=document.getElementById("file");
+			for (i=num;i<number;i++){
+				var thisele="f"+i.toString();
+				var nextele="f"+(i+1).toString();
+				thiselement=document.getElementById(thisele);
+				nextelement=document.getElementById(nextele);
+				thiselement.innerHTML=nextelement.innerHTML;
+			}
+			lastelement=document.getElementById("f"+number.toString());
+			lastelement.innerHTML='';
+			lastbutton=document.getElementById("b"+number.toString());
+			lastbutton.style.display="none";
+
+			number=number-1;
+		}
+</script>
+</body>
+</html>
+
+
